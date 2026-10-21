@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.util.regex.Pattern;
+
 public class ConvertingStrings {
 
     public static void main(String[] args) {
@@ -42,7 +44,7 @@ public class ConvertingStrings {
         for (String product : products) {
 
             //this code takes the line and breaks it into pieces at the |
-            String[] productPieces = product.split("\\|");
+            String[] productPieces = product.split(Pattern.quote("|"));
 
             //convert all the strings into their appropriate data types
             int productId = Integer.parseInt( productPieces[0] );
