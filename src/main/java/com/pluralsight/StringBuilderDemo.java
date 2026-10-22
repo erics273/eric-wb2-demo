@@ -25,7 +25,7 @@ public class StringBuilderDemo {
         fullName.append(", ");
         fullName.append(firstName);
 
-        System.out.printf("%s", fullName.toString());
+        System.out.printf("%s", fullName.toString()); 
 
 
     }
