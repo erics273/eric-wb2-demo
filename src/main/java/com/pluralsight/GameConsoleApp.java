@@ -26,6 +26,19 @@ public class GameConsoleApp {
         System.out.println("House 1 has " + house1.getExteriorWallType());
         System.out.println("House 2 has " + house2.getExteriorWallType());
 
+        House[] myProperties = new House[2];
+        myProperties[0] = house1;
+        myProperties[1] = house2;
+
+        for (House house : myProperties) {
+            System.out.println("House has " + house.getExteriorWallType());
+        }
+
+        for (int i= 0; i < myProperties.length; i++) {
+            House house = myProperties[i];
+            System.out.println("House " + i + " " + house.getExteriorWallType());
+        }
+
 
     }
 }
